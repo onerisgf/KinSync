@@ -2,9 +2,10 @@ import os
 import sys
 from datetime import date
 from PySide6.QtWidgets import QApplication
-from PySide6.QtCore import Qt, QPoint
+from PySide6.QtCore import Qt
 
 from ui.popup_window import KinPopupWindow, DatePickerDialog
+import kin_calculator
 
 def main():
     app = QApplication(sys.argv)
@@ -12,7 +13,12 @@ def main():
     os.makedirs(output_dir, exist_ok=True)
 
     window = KinPopupWindow()
-    target_date = date.today()
+    
+    # Target Kin 126: Enlaçador de Mundos Solar Branco
+    target_kin = 126
+    target_date = kin_calculator.find_date_for_kin(target_kin, date.today())
+    print(f"Configuring window for Kin {target_kin} - Date: {target_date}")
+    
     window.update_for_date(target_date)
     window.show()
     app.processEvents()
@@ -38,7 +44,7 @@ def main():
         pixmap.save(filepath, "PNG")
         print(f"Saved {filepath} ({pixmap.width()}x{pixmap.height()}) - {title}")
 
-    # Also capture Date Picker Dialog
+    # Also capture Date Picker Dialog for this date
     picker = DatePickerDialog(target_date, window)
     picker.show()
     app.processEvents()
@@ -48,13 +54,8 @@ def main():
     print(f"Saved {picker_path} ({picker_pix.width()}x{picker_pix.height()}) - Seletor de Data")
     picker.close()
 
-    # Clean up test file if it exists
-    test_file = os.path.join(output_dir, "test_window.png")
-    if os.path.exists(test_file):
-        os.remove(test_file)
-
     window.close()
-    print("All screenshots generated successfully!")
+    print(f"All screenshots for Kin {target_kin} generated successfully!")
 
 if __name__ == "__main__":
     main()
