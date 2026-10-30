@@ -22,6 +22,20 @@ Ele roda em segundo plano na área de notificação da barra de tarefas (ao lado
 
 ---
 
+## 📸 Demonstração Visual das Telas
+
+> Veja o visual completo das telas do **KinSync** antes de baixar:
+
+| 🪶 Aba 1: KIN | 🔮 Aba 2: ORÁCULO | 🌊 Aba 3: ONDA |
+| :---: | :---: | :---: |
+| <img src="docs/screenshots/01_aba_kin.png" width="230" alt="Aba KIN — Afirmação Galáctica e Selo"> | <img src="docs/screenshots/02_aba_oraculo.png" width="230" alt="Aba ORÁCULO — Cruz da Quinta Força"> | <img src="docs/screenshots/03_aba_onda.png" width="230" alt="Aba ONDA — Onda Encantada 5x5"> |
+
+| 🌌 Aba 4: MATRIZ | 🌙 Aba 5: LUA | 📅 Seletor de Data |
+| :---: | :---: | :---: |
+| <img src="docs/screenshots/04_aba_matriz.png" width="230" alt="Aba MATRIZ — Tzolkin Harmônico e PAGs"> | <img src="docs/screenshots/05_aba_lua.png" width="230" alt="Aba LUA — 13 Luas, Heptal e Crono-Psi"> | <img src="docs/screenshots/06_seletor_data.png" width="230" alt="Seletor de Data — Calendário Modal"> |
+
+---
+
 ## ✨ Principais Funcionalidades
 
 ### 1. Ícone Único Nativo na Barra de Tarefas
@@ -49,29 +63,54 @@ Ele roda em segundo plano na área de notificação da barra de tarefas (ao lado
 ```
 
 #### 🪶 Aba 1: KIN
+
+<p align="center">
+  <img src="docs/screenshots/01_aba_kin.png" width="300" alt="Aba 1: KIN — Kin do Dia, Tom e Afirmação">
+</p>
+
 - Notação maia do tom em barras e pontos perfeitamente calibrada (inclusive para os tons 11, 12 e 13).
 - Glifo colorido do selo solar oficial em destaque (78×78 px).
 - Número do Kin e Nome Completo em linha única com **título adaptativo dinâmico** (20px, adaptando se o nome for extenso).
 - **Afirmação do Livro dos Kins**: 5 versos com tipografia límpida de 14.5px, aspas clássicas `Georgia` de 28px no início e fim, equalizador invisível de linha de base e espaçamento vertical rigorosamente uniforme de 1px entre todas as linhas.
 
 #### 🔮 Aba 2: ORÁCULO
+
+<p align="center">
+  <img src="docs/screenshots/02_aba_oraculo.png" width="300" alt="Aba 2: ORÁCULO — Cruz da Quinta Força">
+</p>
+
 - **Cruz da Quinta Força**: Guia (topo), Antípoda (esquerda), Destino (centro), Análogo (direita) e Oculto (base).
 - Exibe o glifo do selo oficial, notação do tom maia e rótulo de cada força arquetípica.
 - **Alinhamento e Centralização Milimétrica**: Células de 80px e largura de tom/selo de 60px com `Qt.AlignHCenter`, garantindo **0.0 px de diferença** entre o eixo do tom e o eixo do selo em todas as posições.
 - Tooltips detalhadas exibindo nome, cor, poder e ação de cada posição.
 
 #### 🌊 Aba 3: ONDA
+
+<p align="center">
+  <img src="docs/screenshots/03_aba_onda.png" width="300" alt="Aba 3: ONDA — Onda Encantada 5x5">
+</p>
+
 - Exibe a **Onda Encantada de 13 Dias** ativa no momento na geometria tradicional em espiral do Dreamspell (grade 5×5).
 - Identificação do selo iniciador no Tom 1 Magnético com preposição gramatical em português (ex: *"DO ESPELHO BRANCO"*, *"DA NOITE AZUL"*).
 - Destaque luminoso do Kin do Dia com contorno branco e cantos arredondados.
 
 #### 🌌 Aba 4: MATRIZ
+
+<p align="center">
+  <img src="docs/screenshots/04_aba_matriz.png" width="300" alt="Aba 4: MATRIZ — Tzolkin Harmônico e PAGs">
+</p>
+
 - **Grade Harmônica de 260 Kins** (13 colunas de tons × 20 linhas de selos solares) renderizada em tempo real via `QPainter` nativo.
 - Mapeamento e destaque dos **52 Portais de Ativação Galáctica (PAG)** com borda verde esmeralda.
 - Célula do Kin do Dia iluminada na sua cor pura.
 - **Interatividade Completa**: Detecção de cursor com tooltip dinâmica e navegação por clique (ao clicar em qualquer um dos 260 kins, todo o popup é atualizado para inspecioná-lo).
 
 #### 🌙 Aba 5: LUA
+
+<p align="center">
+  <img src="docs/screenshots/05_aba_lua.png" width="300" alt="Aba 5: LUA — 13 Luas, Heptal e Crono-Psi">
+</p>
+
 - Exibe a coordenada solar-planetária do **Sincronário das 13 Luas de 28 Dias** (365 dias).
 - **Card do Anel Solar**: Numeração do ciclo orbital (ex: *ANEL SOLAR 39*) e Kin Portador do Ano (*Lua Galáctica Vermelha*) com glifo do selo e tom maia encimado.
 - **Lua Atual e Tom da Criação**: Título da Lua (*Lua Autoexistente*) acompanhado pela notação em pontos do Tom correspondente.
@@ -82,6 +121,11 @@ Ele roda em segundo plano na área de notificação da barra de tarefas (ao lado
 ---
 
 ### 3. Cabeçalho com Seletor de Data
+
+<p align="center">
+  <img src="docs/screenshots/06_seletor_data.png" width="260" alt="Cabeçalho com Seletor de Data e Calendário Modal">
+</p>
+
 - Exibe a data por extenso em português (ex: *terça-feira, 20 de outubro*).
 - Clique no cabeçalho para abrir o calendário modal escuro: consulte o Kin de qualquer data (passada ou futura) ou calcule o seu Kin de nascimento.
 - Botão "Ir para Hoje" para retorno imediato à data atual.
@@ -112,6 +156,8 @@ KinSync/
 │   ├── moons.py               # Metadados das 13 Luas (animais totem, tons, perguntas arquetípicas)
 │   ├── plasmas.py             # Os 7 Plasmas Radiais (chakras, cores, qualidades e afirmações)
 │   └── crono_psi.py           # Matriz de 365 dias do Banco Psi / Unidades Crono-Psi
+├── docs/                      # Documentação visual e capturas de tela
+│   └── screenshots/           # Capturas de alta resolução de todas as abas e janelas
 ├── specs/                     # Diretório normativo de especificações técnicas de design
 │   ├── README.md              # Índice das especificações
 │   ├── design_system.md       # Cores, fontes, medidas da janela popup e bandeja
@@ -135,6 +181,7 @@ KinSync/
 │   ├── test_kin_calculator.py # Suíte de testes do motor Dreamspell e Oráculo
 │   ├── test_lua_tab.py        # Testes unitários dos cálculos e componentes da aba LUA
 │   └── test_main_tray.py      # Testes do menu de contexto da bandeja e atalhos
+├── capture_screens.py         # Utilitário para gerar automaticamente os screenshots do README
 ├── KinSync.exe                # Executável silencioso com ícone personalizado
 ├── KinSync.lnk                # Atalho oficial com ícone integrado
 ├── kinsync.ico                # Ícone oficial em múltiplos tamanhos (16px a 256px)
