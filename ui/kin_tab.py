@@ -73,7 +73,7 @@ class KinTab(QWidget):
             lbl.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
             lbl.setAlignment(Qt.AlignCenter)
             lbl.setWordWrap(False)
-            lbl.setFixedHeight(28)
+            lbl.setFixedHeight(32)
             lbl.setStyleSheet(f"""
                 color: {TEXT_SECONDARY};
                 font-size: 14.5px;

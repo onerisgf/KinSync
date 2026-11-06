@@ -17,7 +17,7 @@ A aba **KIN** é a visualização primária do KinSync. Ela apresenta o Kin do D
 [ 2. Glifo Oficial do Selo Solar (PNG)     ]  (Altura fixa: 82px, Imagem: 78×78)
 [ 3. Número do Kin ("KIN 54")              ]  (Fonte: 11px Bold, Letter-spacing: 2px)
 [ 4. Nome Completo do Kin                  ]  (Fonte: 20px Dinâmico, Linha única)
-[ 5. Afirmação Poética do Livro dos Kins   ]  (5 versos de 28px, Espaçamento: 1px)
+[ 5. Afirmação Poética do Livro dos Kins   ]  (5 versos de 32px, Espaçamento: 1px)
 ```
 
 ---
@@ -68,7 +68,7 @@ A aba **KIN** é a visualização primária do KinSync. Ela apresenta o Kin do D
 - **Margens**: `(0, 0, 0, 0)`
 - **Espaçamento entre Versos (`setSpacing`)**: `1px`
 - **Quantidade de Linhas**: 5 rótulos `QLabel` independentes (`verse_labels`).
-- **Altura Fixa de Cada Rótulo**: `28px` (`setFixedHeight(28)`)
+- **Altura Fixa de Cada Rótulo**: `32px` (`setFixedHeight(32)`, acomodando integralmente a altura da linha de 32px e as hastes descendentes de letras como *q*, *p*, *g*, *j*, *y*)
 - **Tipografia dos Versos**:
   - Família: `'Segoe UI'`
   - Tamanho: `14.5px`
